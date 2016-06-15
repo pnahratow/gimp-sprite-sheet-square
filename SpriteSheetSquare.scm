@@ -12,6 +12,8 @@
 			(yoff 0)
 		)
 
+		(gimp-image-resize-to-layers img)
+
 		(set! anImage   (car (gimp-image-duplicate img)))
 		(set! numlayers (car (gimp-image-get-layers anImage)))
 		(set! layers    (cadr(gimp-image-get-layers anImage)))
